@@ -1,23 +1,26 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Horizon☆Form"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "hf"
 
 #your name
-author: "You"
+author: "秦一爱吃曲奇(模组作者)
+一只一只铼铱合金(提供帮助)
+OP-23(提供帮助)
+R(JAVA)"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "hf.HFMain"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "视界线☆望形/nHorizon☆Form/n守望视界线的边缘，去看那虚无缥缈的未来"
 
 #the mod version
-version: 1.0
+version: 0.0.0.1
 
 #the minimum game build required to run this mod
-minGameVersion: 145
+minGameVersion: 149
 
 #this is a java mod
 java: true
