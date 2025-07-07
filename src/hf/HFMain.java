@@ -2,6 +2,7 @@ package hf;
 
 import arc.Events;
 import arc.util.Log;
+import hf.content.HBlocks;
 import hf.ui.dialogs.SCResearchDialog;
 import mindustry.Vars;
 import mindustry.game.EventType.Trigger;
@@ -10,6 +11,7 @@ import mindustry.mod.Mod;
 public class HFMain extends Mod {
   @Override
   public void loadContent() {
+    HBlocks.load();
   }
 
   @Override
