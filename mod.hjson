@@ -1,20 +1,17 @@
 #the mod name as displayed in-game
-displayName: "Horizon☆Form"
+displayName: "EndlandDust-Desktop"
 
 #the internal name of your mod
-name: "hf"
+name: "ed"
 
 #your name
-author: "秦一爱吃曲奇(模组作者)
-一只一只铼铱合金(提供帮助)
-OP-23(提供帮助)
-R(JAVA)"
+author: "OP AND QY AND R"
 
 #the fully qualified main class of the mod
 main: "hf.HFMain"
 
 #the mod description as seen in the mod dialog
-description: "视界线☆望形/nHorizon☆Form/n守望视界线的边缘，去看那虚无缥缈的未来"
+description: "Welcome to the world of Endland Dust Desktop"
 
 #the mod version
 version: 0.0.0.1
