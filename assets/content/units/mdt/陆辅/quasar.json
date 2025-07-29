@@ -1,0 +1,83 @@
+{
+    "health": 2350,
+    "armor":13,
+    "range": 144,
+    "canBoost":"true",
+    "boostMultiplier":1.8,
+    "speed":0.6,
+    "buildSpeed":0,
+    "engineOffset":-2,
+    "abilities": [
+        {
+			"type": "ForceFieldAbility",
+			"sides": 8,
+			"radius": 20,
+			"max": 1800,
+			"regen": 2,
+			"cooldown": 900
+        }
+    ],
+    "weapons": [
+    {
+    "name": "耀星-连射激光"
+    "predictTarget": true
+    "rotationLimit": 18
+    "rotateSpeed": 0.75
+    "shootCone": 90
+    "rotate": true
+    "recoil": 4
+    "shootY": 4
+    "shake": 9
+    "x": 7.5
+
+    "reload": 260
+
+    "chargeSound": "激光-蓄力"
+    "shootSound": "激光-发射"
+"shoot": {
+    "firstShotDelay": 75
+    "shotDelay": 8
+    "shots": 6
+    }
+
+"bullet": {
+    "type": "LaserBulletType"
+    "collidesTeam": true
+    "collidesAir": true
+    "length": 150
+    "recoil": 1
+    "width": 25
+
+    "buildingDamageMultiplier": 1.75
+
+    "healAmount": 50
+    "damage": 155
+
+    "colors": [ 84f491, 84f491, ffffff ]
+}
+    }
+		{"name": "O枪",
+	"reload":10, 
+	"top":false,
+	"x": 4,  "y": -3.5, 
+	"rotate": true,
+	"inaccuracy": 5,
+	"shootSound": "missile",
+	"alternate": true,
+	"bullet":{
+	"type":"MissileBulletType",
+	"healAmount":35,
+	"healPercent":2.5,
+	"frontColor":"FFFFFF",	
+	"backColor":"97FFA8",
+	"trailColor":"97FFA8",	
+	"damage":12,
+	"hitEffect":"none",
+	"hitSound":"none",
+	"despawnEffect":"none",
+	"collidesTeam":true,  
+	"speed":4,	"lifetime":56,
+	"width":9,	 "height":10
+	}	},
+	]
+}

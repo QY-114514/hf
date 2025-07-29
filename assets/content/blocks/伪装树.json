@@ -1,0 +1,51 @@
+{
+"health":500,//生命
+"size":1,//大小
+"reload": 120,
+"requirements":[],
+"category":"turret",//游戏界面分类
+"shootEffect":{
+"type": "MultiEffect",//特效叠加
+			"effects": [
+      {
+			"type": "WaveEffect",//波特效
+			"lifetime": 250,//存在时间
+			"sizeFrom": 0,//开始大小
+			"sizeTo": 160,//结束大小
+			"strokeFrom": 2,//开始厚度
+			"strokeTo": 2,//结束厚度
+			"interp": "circleOut",//别动
+			"colorFrom": "CF2222FF",//开始颜色
+			"colorTo": "CF2222FF"//结束颜色
+		}
+		{
+			"type": "WaveEffect",//波特效
+			"lifetime": 200,//存在时间
+			"sizeFrom": 0,//开始大小
+			"sizeTo": 160,//结束大小
+			"strokeFrom": 2,//开始厚度
+			"strokeTo": 2,//结束厚度
+			"interp": "circleOut",//别动
+			"colorFrom": "CF2222FF",//开始颜色
+			"colorTo": "CF2222FF"//结束颜色
+		}
+		{
+			"type": "WaveEffect",//波特效
+			"lifetime": 150,//存在时间
+			"sizeFrom": 0,//开始大小
+			"sizeTo": 160,//结束大小
+			"strokeFrom": 2,//开始厚度
+			"strokeTo": 2,//结束厚度
+			"interp": "circleOut",//别动
+			"colorFrom": "CF2222FF",//开始颜色
+			"colorTo": "CF2222FF"//结束颜色
+		}
+		]
+},//射击特效
+"smokeEffect":"none",//冒烟特效
+"ammoUseEffect":"none",//换弹特效
+"shootSound":"伪装树打击",//射击音效
+"range":160,//范围
+"reload":300,//攻击间隔
+"inaccuracy":0,//精准度
+}

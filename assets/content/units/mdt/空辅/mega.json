@@ -1,0 +1,69 @@
+{
+	"health": 600,
+	"armor": 10,
+    "mineSpeed": 6,
+    "mineTier": 3,
+    "drag":0.1
+    "buildSpeed": 4,
+    "speed":4,
+	"weapons": [
+		{
+			"name": "O枪",
+			"reload": 10,
+			"x": 8,
+			"y": -6,
+			"rotate": true,
+			"rotateSpeed": 9,
+			"inaccuracy": 0,
+			"shootSound": "lasershoot",
+			"bullet": {
+				"type": "LaserBoltBulletType",
+				"shootEffect":"shootHeal",
+				"frontColor": "97FFA8",
+				"backColor": "97FFA8",
+				"healAmount":40,
+				"healPercent":2.5,
+				"damage": 16,
+				"pierce": true,
+				"pierceCap": 2,
+				"collidesTeam": true,
+				"trailLength": 3,
+				"trailWidth": 1.3,
+				"trailColor": "97FFA8",
+				"speed": 8,
+				"lifetime": 21.875,
+				"width": 2,
+				"height": 8
+			}
+		},
+		{
+			"name": "O枪",
+			"reload": 8,
+			"x": 4,
+			"y": 5,
+			"rotate": true,
+			"rotateSpeed": 9,
+			"inaccuracy": 0,
+			"shootSound": "lasershoot",
+			"bullet": {
+				"type": "LaserBoltBulletType",
+				"shootEffect":"shootHeal",
+				"frontColor": "97FFA8",
+				"backColor": "97FFA8",
+				"healAmount":30,
+				"healPercent":2.0,
+				"damage": 13,
+				"pierce": true,
+				"pierceCap": 2,
+				"collidesTeam": true,
+				"trailLength": 3,
+				"trailWidth": 1.3,
+				"trailColor": "97FFA8",
+				"speed": 8.2,
+				"lifetime": 21.875,
+				"width": 2,
+				"height": 8
+			}
+		}
+	]
+}

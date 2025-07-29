@@ -1,0 +1,111 @@
+{
+	"range": 260,
+	"shoot": {
+		"shots": 8,
+		"shotDelay": 2,
+		"type": "ShootAlternate",
+		"barrels": 3,
+		"spread": 3.5
+	},
+	"ammoPerShot": 1,
+	"reload": 32,
+	"ammoTypes": {
+		"blast-compound": {
+			"type": "MissileBulletType",
+			"width": 8,
+			"height": 8,
+			"shrinkY": 0,
+			"speed": 3.7,
+			"lifetime": 70.27,
+			"damage": 18,
+			"splashDamageRadius": 30,
+			"splashDamage": 50,
+			"ammoMultiplier": 5,
+			"hitEffect": "blastExplosion",
+			"despawnEffect": "blastExplosion",
+			"status": "blasted",
+			"statusDuration": 60
+		},
+		"pyratite": {
+			"type": "MissileBulletType",
+			"frontColor": "f8ad42",
+			"backColor": "f68021",
+			"width": 7,
+			"height": 8,
+			"shrinkY": 0,
+			"homingPower": 0.08,
+			"makeFire": true,
+			"speed": 3.7,
+			"lifetime": 70.27,
+			"damage": 15,
+			"splashDamageRadius": 20,
+			"splashDamage": 45,
+			"ammoMultiplier": 5,
+			"hitEffect": "blastExplosion",
+			"status": "burning",
+			"statusDuration": 360
+		},
+		"surge-alloy": {
+			"type": "MissileBulletType",
+			"backColor": "F2E770",
+			"frontColor": "FFFFFF",
+			"trailColor": "F2E770",
+			"width": 8,
+			"height": 8,
+			"shrinkY": 0,
+			"speed": 3.7,
+			"lifetime": 70.27,
+			"damage": 25,
+			"splashDamageRadius": 25,
+			"splashDamage": 48,
+			"ammoMultiplier": 4,
+			"hitEffect": "blastExplosion",
+			"despawnEffect": "blastExplosion",
+			"lightningDamage": 19,
+			"lightning": 2,
+			"lightningLength": 10
+		},
+		"phase-fabric": {
+		    "type": "MissileBulletType",
+			"frontColor": "EEC591A8",
+			"backColor": "EEC59190",
+			"reloadMultiplier":0.5
+			"width": 7,
+			"height": 8,
+			"shrinkY": 0,
+			"homingPower": 0.08,
+			"makeFire": true,
+			"speed": 3.7,
+			"lifetime": 70.27,
+			"damage": 20,
+			"splashDamageRadius": 20,
+			"splashDamage": 45,
+			"hitEffect": "blastExplosion",
+			"fragBullets": 2
+			"fragRandomSpread": 0
+			"fragBullet": {
+			    "type": "LaserBulletType",
+		        "chargeEffect": {
+			    "type": "MultiEffect",
+			    "effects": [
+				"lancerLaserCharge",
+				"lancerLaserChargeBegin"
+			]
+		},
+		"despawnEffect": "none",
+		"damage": 18
+		"buildingDamageMultiplier":0.2
+		"width": 10
+		"length": 100
+		"pierce": true,
+		"pierceBuilding": true,
+		"lifetime": 35
+		"colors": [
+					"EEC59190",
+					"EEC591A8",
+					"EEC591"
+				],
+		        }
+		    }
+	}
+}

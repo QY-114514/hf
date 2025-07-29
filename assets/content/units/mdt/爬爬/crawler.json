@@ -1,0 +1,80 @@
+{
+	"details": "更强的行动能力！更大的装药量！板载！[red]冲刺！冲刺！冲冲冲！",
+	"speed": 1.8,
+	"health": 105,
+	    "abilities": [
+        {
+			"type": "ForceFieldAbility",
+			"sides": 999,
+			"radius": 12,
+			"max": 75,
+			"regen": 0.025,
+			"cooldown": 3600
+        }
+    ],
+	"weapons": [
+		{
+			"name": "爬虫1",
+			"reload": 10,
+			"x": 0,
+			"y": 0,
+			"rotate": false,
+			"shootCone": 270,
+			"ejectEffect": "none",
+			"shootSound": "explosionbig",
+			"mirror": false,
+			"inaccuracy": 0,
+			"alternate": true,
+			"top": false,
+			"shootOnDeath": true,
+			"bullet": {
+				"killShooter": true,
+				"splashDamageRadius": 88,
+				"instantDisappear": true,
+				"collides": false,
+				"splashDamage": 400,
+				"speed": 1,
+				"lifetime": 10,
+				"hitEffect": "massiveExplosion",
+				"despawnEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 18,
+							"sizeFrom": 6,
+							"sizeTo": 0,
+							"length": 45,
+							"baseLength": 3,
+							"lifetime": 35,
+							"colorFrom": "CC5DFFFF",
+							"colorTo": "CC5DFFFF"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 32,
+							"line": true,
+							"length": 53,
+							"baseLength": 20,
+							"lifetime": 22,
+							"colorFrom": "CC5DFFFF",
+							"colorTo": "CC5DFFFF"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 15,
+							"sizeFrom": 0,
+							"sizeTo": 70,
+							"strokeFrom": 4,
+							"strokeTo": 0,
+							"colorFrom": "CC5DFFFF",
+							"colorTo": "CC5DFFFF"
+						}
+					]
+				},
+				"width": 0,
+				"height": 0
+			}
+		}
+	]
+}

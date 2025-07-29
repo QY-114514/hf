@@ -1,0 +1,5 @@
+{
+	"health":3400,//血量
+	"armor": 3
+	"chanceDeflect":15,//反弹概率（1=1%）
+}

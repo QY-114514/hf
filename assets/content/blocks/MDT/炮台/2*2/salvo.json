@@ -1,0 +1,79 @@
+{
+	"health": 2500
+	"ammoTypes": {
+		"copper": {
+			"type": "BasicBulletType",
+			"width": 8,
+			"height": 13,
+			"speed": 15,
+			"lifetime": 15,
+			"damage": 15,
+			"ammoMultiplier": 2
+		},
+		"graphite": {
+			"type": "BasicBulletType",
+			"width": 10,
+			"height": 15,
+			"speed": 16,
+			"lifetime": 13.93,
+			"damage": 29,
+			"splashDamageRadius": 15,
+			"splashDamage": 12,
+			"knockback": 1,
+			"hitEffect": "flakExplosion",
+			"reloadMultiplier": 0.6,
+			"ammoMultiplier": 4
+		},
+		"pyratite": {
+			"type": "BasicBulletType",
+			"width": 10,
+			"height": 17,
+			"speed": 17.5,
+			"lifetime": 13.3,
+			"damage": 22,
+			"splashDamageRadius": 25,
+			"splashDamage": 35,
+			"frontColor": "f8ad42",
+			"backColor": "f68021",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					"flakExplosion",
+					"fireHit"
+				]
+			},
+			"status": "burning",
+			"statusDuration": 720,
+			"makeFire": true,
+			"ammoMultiplier": 5
+		},
+		"silicon": {
+			"type": "BasicBulletType",
+			"width": 10,
+			"height": 15,
+			"speed": 15.5,
+			"lifetime": 15.5,
+			"damage": 20,
+			"homingPower": 0.1,
+			"reloadMultiplier": 1.67,
+			"ammoMultiplier": 5,
+			"hitEffect": "hitBulletBig"
+		},
+		"thorium": {
+			"type": "BasicBulletType",
+			"shootEffect": "shootBig",
+			"smokeEffect": "shootBigSmoke",
+			"hitEffect": "hitBulletBig",
+			"width": 12,
+			"height": 19,
+			"speed": 17,
+			"lifetime": 13.7,
+			"damage": 39,
+			"pierce": true,
+			"pierceCap": 2,
+			"ammoMultiplier": 4
+		}
+	},
+	"range": 223,
+	"ammoUseEffect": "casing3"
+}

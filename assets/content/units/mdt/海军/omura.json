@@ -1,0 +1,101 @@
+{
+	"health": 29500,
+	"weapons": [
+		{
+			"name": "蛟龙-主炮",
+			"mirror": false,
+			"x": 15,
+			"y": -30,
+			"reload": 75,
+			"shoot": {
+				"shots": 8,
+				"shotDelay": 1
+			},
+			"shootSound": "missile",
+			"rotate": true,
+			"rotateSpeed": 4,
+			"xRand": 6,
+			"inaccuracy": 6,
+			"bullet": {
+				"type": "MissileBulletType",
+				"damage": 185,
+				"shootEffect": "none",
+				"smokeEffect": "none",
+				"splashDamageRadius": 35,
+				"splashDamage": 185,
+				"lightningDamage": 13,
+				"lightning": 2,
+				"lightningLength": 9,
+				"lightningLengthRand": 3,
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosion",
+				"width": 8,
+				"height": 9,
+				"speed": 4.5,
+				"lifetime": 70
+			}
+		},
+		{
+			"name": "蛟龙-主炮",
+			"mirror": false,
+			"x": -15,
+			"y": -30,
+			"reload": 75,
+			"shoot": {
+				"shots": 8,
+				"shotDelay": 1
+			},
+			"shootSound": "missile",
+			"rotate": true,
+			"rotateSpeed": 4,
+			"xRand": 6,
+			"inaccuracy": 6,
+			"bullet": {
+				"type": "MissileBulletType",
+				"damage": 185,
+				"shootEffect": "none",
+				"smokeEffect": "none",
+				"splashDamageRadius": 35,
+				"splashDamage": 185,
+				"lightningDamage": 13,
+				"lightning": 2,
+				"lightningLength": 9,
+				"lightningLengthRand": 3,
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosion",
+				"width": 8,
+				"height": 9,
+				"speed": 4.5,
+				"lifetime": 70
+			}
+		},
+		{
+			"name": "海神-主炮",
+			"reload": 115,
+			"x": 0,
+			"y": 0,
+			"shootY": 10,
+			"cooldownTime": 85,
+			"rotate": true,
+			"rotateSpeed": 5,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootSound": "railgun",
+			"shake": 8,
+			"bullet": {
+				"type": "RailBulletType",
+				"damage": 2160,
+				"pierce": true,
+				"pierceBuilding": true,
+				"pierceEffect": "railHit",
+				"pointEffect": "railTrail",
+				"hitEffect": "massiveExplosion",
+				"shootEffect": "railShoot",
+				"smokeEffect": "smokeCloud",
+				"pierceDamageFactor": 0.167,
+				"length": 765,
+				"despawnEffect": "bigShockwave"
+			}
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+"health":358,//生命
+"size":1,//大小
+"reload": 120,
+"requirements":[],
+"category":"turret",//游戏界面分类
+"shootEffect":{
+"type": "MultiEffect",//特效叠加
+			"effects": [
+      {
+			"type": "ParticleEffect",//粒子特效
+			"particles": 3,//粒子数量
+			"sizeFrom":1,//开始大小
+			"sizeTo": 2,//结束大小
+			"sizeInterp":"pow10In",//别碰
+			"length": 16,//偏移距离8：1格
+			"baseLength": 8,//随机量
+			"lifetime": 60,//存在时间
+			"colorFrom": "CF2222FF",//开始颜色
+		    "colorTo": "CF2222FF",//结束颜色
+			"cone": 20//角度1-360
+		}
+		]
+},//射击特效
+"smokeEffect":"none",//冒烟特效
+"ammoUseEffect":"none",//换弹特效
+"shootSound":"伪装树打击",//射击音效
+"range":200,//范围
+"reload":60,//攻击间隔
+"inaccuracy":0,//精准度
+}

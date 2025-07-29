@@ -1,0 +1,50 @@
+{
+    "health": 780,
+    "armor":6,
+    "range": 48,
+    "canBoost":"true",
+    "boostMultiplier":1.8,
+    "speed":0.8,
+    "buildSpeed":0,
+    "abilities": [
+        {
+            "type":"ShieldRegenFieldAbility",
+            "amount": 30.0,
+            "max": 240.0,
+            "reload": 180.0,
+            "range": 60.0
+        }
+    ],
+    "weapons": [
+		{
+            "name":"恒星-电弧",
+            "shake":3.2,
+            "shootSound":"spark",
+			"reload": 18,
+			    "x": 5.0,
+			    "y": 0.5,
+			    "rotate": false,
+			    "inaccuracy": 35,
+			    "alternate": true,
+				"top":false,
+                "shoot":{
+                    "shots":4,
+                    "shotDelay":0.5
+                },
+			"bullet": {
+                "type":"LightningBulletType",
+                "hitEffect":"hitLancer",
+				"damage": 70,
+                "speed": 0,
+				"lifetime": 0.0001,
+                "lightningLength":7,
+                "lightningLengthRand":7,
+                "shootEffect": "shootHeal",
+                "lightningColor": "97FFA8",
+				"hitColor": "97FFA8",
+				"healPercent": 0,
+				"collidesTeam": false
+			}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "health": 720,
+	"canBoost": false,
+    "armor":7,
+	"speed":0.6,
+    "range": 58,
+    "weapons": [
+		{
+            "name":"战锤-火焰喷射器",
+			"reload": 8.5,
+			    "rotate": false,
+			    "inaccuracy": 0,
+			    "alternate": true,
+                "shootSound": "flame",
+			    "ejectEffect": "none",
+				"top":false,
+			"bullet": {
+				"damage": 68,
+                "pierce":true,
+				"pierceBuilding":true,
+                "pierceCap":4,
+                "type":"BulletType",
+                "shootEffect": "shootPyraFlame",
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 4,
+					"lifetime": 10,
+					"sizeFrom": 3,
+					"sizeTo": 0,
+					"colorFrom": "FF8C00",
+					"colorTo": "FF8C00"
+				},
+				"despawnEffect": "none",
+				"statusDuration": 360,
+				"status": "burning",
+                "speed": 3,
+				"lifetime": 17
+			}
+		}
+	]
+}

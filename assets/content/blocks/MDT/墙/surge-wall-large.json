@@ -1,0 +1,7 @@
+{
+	"health":10800,//血量
+	"armor": 10
+	"lightningChance":0.075//放电概率（1=100%）
+	"lightningDamage":40//闪电伤害
+	"lightningLength":10//闪电长度（1=0.5格）
+}

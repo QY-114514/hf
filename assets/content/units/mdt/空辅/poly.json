@@ -1,0 +1,33 @@
+{
+	"buildSpeed": 2.75,
+	"health": 500,
+    "mineSpeed": 6,
+    "mineTier": 2,
+    "speed":3.75,
+	"range":140,
+	"weapons":[
+	{"name": "O枪",
+	"reload":15, 
+	"top":false,
+	"x": 4,  "y": -3.5, 
+	"rotate": false,
+	"inaccuracy": 5,
+	"shootSound": "missile",
+	"alternate": true,
+	"bullet":{
+	"type":"MissileBulletType",
+	"healAmount":35,
+	"healPercent":2.5,
+	"frontColor":"FFFFFF",	
+	"backColor":"97FFA8",
+	"trailColor":"97FFA8",	
+	"damage":12,
+	"hitEffect":"none",
+	"hitSound":"none",
+	"despawnEffect":"none",
+	"collidesTeam":true,  
+	"speed":4,	"lifetime":56,
+	"width":9,	 "height":10
+	}	}
+	]
+}

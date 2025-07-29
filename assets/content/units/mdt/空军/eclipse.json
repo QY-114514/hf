@@ -1,0 +1,118 @@
+{
+	"health": 30070,
+	"armor": 24,
+	"abilities": [
+	{
+		"type": "ShieldArcAbility",
+		"radius": 45,
+		"width": 9,
+		"max": 1200,
+		"regen": 4.5,
+		"cooldown": 3600,
+		"angle": 120,
+		"angleOffset": 4
+	},
+	],
+	"weapons": [
+		{
+			"name": "日蚀-副炮",
+			"reload": 30,
+			"shoot": {
+				"shots": 3,
+				"shotDelay": 4
+			},
+			"shootY": 9,
+			"x": 11,
+			"y": 27,
+			"rotate": true,
+			"rotateSpeed": 3,
+			"shootSound": "shoot",
+			"shake": 1,
+			"ejectEffect": "casing3",
+			"bullet": {
+				"type": "BasicBulletType",
+				"speed": 6,
+				"lifetime": 60,
+				"width": 10,
+				"height": 12,
+				"damage": 135,
+				"status": "blasted",
+				"statusDuration": 120,
+				"shootEffect": "shootBig",
+				"splashDamageRadius": 40,
+				"splashDamage": 88,
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosionBig",
+				"ammoMultiplier": 6,
+				"lightningDamage": 14,
+				"lightning": 2,
+				"lightningLength": 7
+			}
+		},
+		{
+			"name": "日蚀-副炮",
+			"reload": 36,
+			"shoot": {
+				"shots": 3,
+				"shotDelay": 4
+			},
+			"shootY": 9,
+			"x": 20,
+			"y": -13,
+			"rotate": true,
+			"rotateSpeed": 3,
+			"shootSound": "shoot",
+			"shake": 1,
+			"ejectEffect": "casing3",
+			"bullet": {
+				"type": "BasicBulletType",
+				"speed": 6,
+				"lifetime": 60,
+				"width": 10,
+				"height": 12,
+				"damage": 148,
+				"status": "blasted",
+				"statusDuration": 120,
+				"shootEffect": "shootBig",
+				"splashDamageRadius": 40,
+				"splashDamage": 90,
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosionBig",
+				"ammoMultiplier": 6,
+				"lightningDamage": 14,
+				"lightning": 2,
+				"lightningLength": 7
+			}
+		},{
+"name": "日蚀-激光"
+    "predictTarget": false
+    "baseRotation": 15
+    "rotateSpeed": 1.8
+    "inaccuracy": 11
+    "rotate": true
+    "shadow": 20
+    "shootY": 9
+    "recoil": 4
+    "shake": 2
+    "x": 18
+    "y": 2
+    "reload": 140
+    "shootSound": "laser"
+"shoot": {
+    "shotDelay": 15
+    "shots": 5
+}
+"bullet": {
+    "type": "LaserBulletType"
+    "sideLength": 80
+    "sideWidth": 1.5
+    "sideAngle": 20
+    "length": 270
+    "width": 27.5
+    "damage": 85
+    "shootEffect": "shockwave"
+    "colors": [ ec7458aa, ff9c5a, ffffff ]
+}
+    }
+	]
+}

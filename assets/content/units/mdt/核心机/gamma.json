@@ -1,0 +1,76 @@
+{
+	"health": 600,
+	"deathSound": "空军-死亡"	
+	"mineSpeed": 9,
+	"mineTier": 3,
+	"buildSpeed": 1.5,
+	"speed": 4.5,
+	"drag": 0.08,
+	"weapons": [
+		{
+			"name": "伽马-燃烧弹机炮",
+			"reload": 2.25,
+			"x": -3.5,
+			"y": 3.5,
+			"rotate": false,
+			"top": false,
+			"inaccuracy": 0,
+			"shootSound": "机枪开火3",
+			"alternate": true,
+			"ejectEffect": "casing2",
+			"bullet": {
+				"buildingDamageMultiplier": 0.225,
+				"damage": 25,
+				"backColor": "FF8C00",
+				"frontColor": "FFB90F",
+				"status": "burning",
+				"statusDuration": 600,
+				"speed": 5,
+				"lifetime": 50,
+				"width": 8,
+				"height": 13
+			}
+		},
+		{
+			"name": "导弹筒",
+		"mirror": false,
+		"rotate": true,
+		"rotateSpeed": 20,
+		"shootSound": "bang",
+		"reload":90,
+		"x":0,"y":-2,
+		"top": true,
+		"alternate":false,
+		"inaccuracy":3,
+		"ejectEffect": "casing1",
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage":12,
+			"speed":6,
+			"width":8,"height":12,
+			"lifetime":60,
+			"trailLength":5,
+	      "trailWidth":3,
+			"smokeEffect": "shootSmallSmoke",
+			"bulletInterval":6,
+                "intervalRandomSpread":5,
+                "intervalBullets":1,
+                "intervalAngle":0,
+                "intervalSpread":0,
+                "fragVelocityMin":3,
+                "fragVelocityMax":5,
+        "intervalBullet":{
+              "damage":10,
+   "type":"BasicBulletType",
+"speed":4,"lifetime":18,
+ "hitSound":"none",
+           "trailLength":3,
+	      "trailWidth":2,
+          "trailColor":"D69862FF",
+           "backColor":"D69862FF",
+          "frontColor":"F2E770FF"
+ },
+                 },
+		}
+	]
+}

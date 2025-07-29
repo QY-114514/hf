@@ -1,0 +1,13 @@
+{
+	//"type": "BuildTurret",
+	"health": 2550,
+	"size": 4,
+	"range":360,
+	"buildSpeed": 2,
+	"canOverdrive": true,
+	"category": "effect",
+	"consumes": {
+		"power": 2,
+		"liquid": "nitrogen/0.4"
+		},
+}

@@ -1,0 +1,53 @@
+{
+	"health": 420,
+	"deathSound": "空军-死亡"
+    "drag":0.15
+    "buildSpeed": 3.25,  
+    "mineSpeed": 14,
+    "mineTier": 2,
+    "speed":5.75,
+    "range":210
+    "faceTarget": false,
+	"weapons":[
+	{	"name": "贝塔-连续机炮",	
+		"reload":10,
+        "x": 2.8,  "y": 2, 
+        "rotate": true,
+        "rotateSpeed":9,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":2
+		},
+		"shootSound": "机枪开火1",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+"buildingDamageMultiplier":0.01,
+	    "damage":15,	  
+	    "speed":6,
+	    "lifetime":40,
+	    "width":6,	 "height":8
+	}	},
+	{	"name": "贝塔-连续机炮",	
+		"reload":10,
+        "x": 2.8,  "y": -4, 
+        "rotate": true,
+        "rotateSpeed":9,
+        "inaccuracy": 0,
+		"shoot":{
+			"shots":3,
+			"shotDelay":2
+		},
+		"shootSound": "机枪开火1",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+"buildingDamageMultiplier":0.01,
+	    "damage":15,	  
+	    "speed":6,
+	    "lifetime":40,
+	    "width":6,	 "height":8
+	}	}
+	]
+}

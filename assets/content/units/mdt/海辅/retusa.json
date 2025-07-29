@@ -1,0 +1,99 @@
+{
+	"health": 290,
+	"weapons": [
+		{
+			"name": "修复仪",
+			"type": "RepairBeamWeapon",
+			"x": 0,
+			"y": -5.5,
+			"shootY": 6,
+			"beamWidth": 0.88,
+			"mirror": false,
+			"repairSpeed": 0.88,
+			"bullet": {
+				"maxRange": 130
+			}
+		},
+		{
+			"name": "潜螺-鱼雷",
+			"mirror": false,
+			"reload": 33,
+			"x": 0,
+			"y": 0,
+			"shoot": {
+				"shotDelay": 8,
+				"shots": 2
+			},
+			"shootCone": 30,
+			"shootSound": "mineDeploy",
+			"rotate": true,
+			"rotateSpeed": 8,
+			"inaccuracy": 15,
+			"bullet": {
+				"type": "BasicBulletType",
+				"damage": 8,
+				"splashDamageRadius": 35,
+				"splashDamage": 33,
+				"weaveMag": 5,
+				"weaveScale": 4,
+				"homingRange": 250,
+				"homingDelay": 8,
+				"homingPower": 0.05,
+				"absorbable": false,
+				"collidesAir": false,
+				"collideFloor": true,
+				"shootEffect": "none",
+				"smokeEffect": "none",
+				"hitSound": "plasmaboom",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						"blastExplosion",
+						"greenCloud"
+					]
+				},
+				"despawnEffect": "none",
+				"sprite": "mine-bullet",
+				"healPercent": 4,
+				"trailLength": 8,
+				"trailWidth": 3,
+				"trailColor": "76D081",
+				"backColor": "76D081",
+				"frontColor": "FFFFFF",
+				"trailRotation": true,
+				"hitSize": 22,
+				"shrinkX": 0,
+				"shrinkY": 0,
+				"maxRange": 86,
+				"width": 10,
+				"height": 10,
+				"speed": 5,
+				"lifetime": 30
+			}
+		},
+		{
+            "name":"新星-主炮",
+            "shootSound":"lasershoot",
+			"reload": 15,
+			    "x": 4.5,
+			    "y": -3,
+			    "rotate": true,
+			    "rotateSpeed": 4,
+			    "inaccuracy": 0,
+			    "alternate": false,
+				"top":false,
+			"bullet": {
+                "type":"LaserBoltBulletType",
+				"damage": 27,
+                "speed": 4.8,
+				"lifetime": 35,
+                "frontColor": "FFFFFF",
+				"backColor": "97FFA8",
+				"healPercent": 0,
+				"collidesTeam": false,
+				"width": 2,
+				"height": 8
+			}
+		}
+	]
+}

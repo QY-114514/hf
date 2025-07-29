@@ -1,0 +1,32 @@
+{
+	"health": 270,
+	"deathSound": "空军-死亡"
+    "drag":0.1
+    "buildSpeed": 2.5,
+    "mineSpeed": 10,
+    "mineTier": 1,
+    "speed":4.5,
+    "range":160,
+	"weapons":[
+		{
+     	"name": "阿尔法-机枪",	
+		"reload": 10, 
+        "x": 2.5,  "y": 1.5, 
+        "rotate": false,
+        "inaccuracy": 0,
+		"shootSound": "机枪开火1",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"shoot":{
+		"shots":3,
+		"shotDelay":2
+		}
+		"bullet":{
+"buildingDamageMultiplier":0.01,
+	    "damage":12,
+	    "speed":4.5,
+	    "lifetime":30,
+	    "width":6,	 "height":8
+	}	}
+	]
+}

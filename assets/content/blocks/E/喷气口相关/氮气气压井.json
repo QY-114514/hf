@@ -1,0 +1,32 @@
+{
+    "category": "power",
+    "attribute" :"steam",
+    "minEfficiency":8,
+    "canOverdrive": false,
+    "displayEfficiencyScale":0.1111111111111,
+    "displayEfficiency":false,
+    "outputLiquid": { "liquid": "nitrogen", "amount": 0.011111111111111111111111111},//输出
+    "group" : "liquids" ,
+    "powerProduction" : 0.111111111111111111111111111111,//电力输出
+    "drawer": {
+        "type": "DrawMulti",
+	    "drawers": [
+	    "DrawDefault",
+		{
+        "type": "DrawBlurSpin",
+        "blurThresh":0.5,
+		"suffix": "-rotator",
+		"rotateSpeed":10
+		},
+        {
+			"type": "DrawRegion",
+			"suffix": "-top"
+		},
+		]
+		},
+    "effectChance" :0.05,
+    "generateEffect":"turbinegenerate",
+    "size" : 3,//大小
+    "ambientSound" : "hum",
+    "ambientSoundVolume" : 1,
+}

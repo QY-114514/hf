@@ -1,0 +1,117 @@
+{
+"faceTarget": true, 
+"weapons":[
+    {
+    "name":"死星-蜂群",//贴图的名字
+	"x":22,"y":-22,//位置x为上下y为左右
+	"mirror":true,//镜像，是否对称
+	"reload":6,//重新装弹速度
+	"rotate":true,//是否旋转
+	"autoTarget": true,//是否自动瞄准目标
+	"shootSound":"missile",//射击音
+	"shoots":1
+	"xRand":6
+	"shootEffect":{
+		"type": "ParticleEffect",//一个粒子效果
+		"particles": 4,//有多少个粒子
+		"line": true,//例子是否呈线状
+		"interp": "circleOut",//圆形渐变色消失（由深到渐）
+		"sizeInterp": "circleOut",//大小以圆形变小的方式消失
+		"lenFrom": 30,//开始大小
+		"lenTo": 0,//结束大小
+		"strokeFrom": 2,//开始长度
+		"strokeTo": 0,//结束长度
+		"length": 95,//粒子总长度
+		"lifetime": 80,//生命周期
+		"colorFrom": "84F491FF",//开始颜色
+		"colorTo": "84F491FF",//结束颜色
+		"cone": 10//旋转角度
+	},//开火特效（在炮口
+	"bullet":{
+"damage": 250,//伤
+"speed": 8,//速
+"width": 9,
+"height": 9,
+"shrinkY": 0.3,
+"backSprite": "large-bomb-back",
+"sprite": "circle-bullet",
+"collidesGround": false,
+"collidesTiles": false,
+"shootEffect": {
+"type": "multiEffect",
+"effects": [
+"colorSparkBig",
+"shootBig2"
+]
+},
+"smokeEffect": "shootSmokeDisperse",
+"backColor": "84F491FF",
+"trailColor": "84F491FF",
+"hitColor": "84F491FF",
+"trailLength": 5,
+"trailWidth": 2.5,
+"trailChance": 0.44,
+"ammoMultiplier": 3,
+"pierceArmor": true,
+"lifetime": 46.875,//生
+"rotationOffset": 90,
+"trailRotation": "true",
+"trailEffect": "disperseTrail",
+"hitEffect": {
+"type": "multiEffect",
+"effects": ["colorSparkBig", "hitBulletColor"]
+},
+"despawnHit": true,
+    }
+	}
+	{
+    "name":"2.14",
+	"x":0,"y":0,
+	"mirror":false,
+	"reload":180,
+	"rotate":false,
+	"shootEffect":{
+                "type": "ParticleEffect",
+                "particles": 4,
+                "sizeFrom":4,
+                "sizeTo": 0,
+                "sizeInterp":"pow10In",
+                "length": 16,
+                "baseLength": 8,
+                "lifetime": 120,
+                "colorFrom": "FFFFFF",
+                "colorTo": "84F491FF",
+                "cone": 20
+	},
+    "shoot":{
+        "shots":4,
+	    "shotDelay":0
+        "type":"ShootBarrel"
+        "barrels":[
+        -31,7,45
+        -31,-7,135
+        31,7,-45
+        31,-7,-135
+        ]
+    }
+	"shootSound":"missileLarge",
+    "bullet":{
+        "sprite":"ed-透彻",
+        "collidesAir":true,
+        "collidesGround":true,
+        "hitSize":8,
+        "damage": 26,
+        "width": 4,
+        "height": 8,
+        "speed": 5,
+        "lifetime": 180,
+        "homingPower":0.09,
+        "homingRange":80,
+        "knockback":2,
+        "trailLength": 8
+	    "trailWidth": 2
+	    "trailColor":"84F491FF"
+        } 	
+    }
+]
+}

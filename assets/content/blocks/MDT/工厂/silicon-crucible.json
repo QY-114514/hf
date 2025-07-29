@@ -1,0 +1,10 @@
+{
+    "outputItem": "silicon/15",
+	"requirements": [
+		"metaglass/70",
+		"titanium/75",
+		"silicon/65",
+		"plastanium/65"
+		"graphite/60"
+	]
+}

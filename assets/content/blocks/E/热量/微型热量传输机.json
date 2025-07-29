@@ -1,0 +1,28 @@
+{
+    //"type":"HeatConductor",
+    "health": 140,//血
+    "category": "crafting",
+    "regionRotated1":1 //传输热量
+    "size": 1,//大小
+    "requirements": [
+        "tungsten/15"
+        "beryllium/15"
+        "surge-alloy/5"
+    ],
+		"researchCostMultiplier": 0.1
+		"category": "crafting",
+	"research": "electric-heater",
+	"drawer": {
+    	"type": "DrawMulti",
+    	"drawers": [
+    	"DrawDefault"
+    	{
+    	        "type":"DrawHeatOutput"
+    	    },
+			{
+				"type": "DrawHeatInput",
+				"suffix":"-heat"
+			}
+		]
+		}
+}
