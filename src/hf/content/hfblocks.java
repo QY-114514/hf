@@ -35,10 +35,12 @@ import mindustry.graphics.Layer;
 import mindustry.graphics.Pal;
 import mindustry.type.Category;
 import mindustry.type.ItemStack;
+import mindustry.type.LiquidStack;
 import mindustry.world.Block;
 import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.blocks.environment.*;
+import mindustry.world.blocks.distribution.*;
 import mindustry.world.blocks.liquid.LiquidRouter;
 import mindustry.world.blocks.logic.MessageBlock;
 import mindustry.world.blocks.power.Battery;
@@ -47,6 +49,7 @@ import mindustry.world.blocks.power.PowerNode;
 import mindustry.world.blocks.production.SolidPump;
 import mindustry.world.blocks.sandbox.ItemSource;
 import mindustry.world.blocks.sandbox.LiquidSource;
+import mindustry.world.blocks.production.*;
 import mindustry.world.blocks.sandbox.PowerVoid;
 import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.consumers.ConsumeCoolant;
@@ -63,18 +66,90 @@ import static mindustry.type.ItemStack.*;
 public class hfblocks {
 
   /** wall */
-  public static Block sandwall;
+  public static Block bigtumorousalloywall,
+      sandwall;
+
+  /** Conveyor */
+  public static Block tumorousalloyConveyor;
+
+  /** crafting */
+  public static Block bigcryofluidmixer;
 
   public static void load() {
 
     /** wall */
     sandwall = new Wall("sand-wall") {
       {
+        requirements(Category.defense, with(Items.sand, 24));
         health = 130;
         armor = 2f;
         buildCostMultiplier = 5f;
         size = 2;
       }
     };
+
+    bigtumorousalloywall = new Wall("big-tumorousalloy-wall") {
+      {
+        requirements(Category.defense, with(HFItems.tumorousalloy, 16));
+        health = 6800;
+        armor = 4f;
+        buildCostMultiplier = 10f;
+        size = 2;
+      }
+    };
+
+    /** Conveyor */
+    tumorousalloyConveyor = new Conveyor("tumorousalloyConveyor") {
+      {
+        requirements(Category.distribution, with(
+            HFItems.tumorousalloy, 5,
+            Items.silicon, 4,
+            Items.lead, 4));
+        health = 50;
+        speed = 0.16f;
+        displayedSpeed = 20f;
+      }
+    };
+
+    /** crafting */
+    bigcryofluidmixer = new GenericCrafter("big-cryofluid-mixer") {
+      {
+        requirements(Category.crafting, with(
+            Items.lead, 120,
+            Items.silicon, 200,
+            Items.titanium, 200,
+            Items.plastanium, 100));
+        outputLiquid = new LiquidStack(Liquids.cryofluid, 1f);
+        size = 4;
+        hasPower = true;
+        hasItems = true;
+        hasLiquids = true;
+        rotate = false;
+        solid = true;
+        outputsLiquid = true;
+        drawer = new DrawMulti(
+            new DrawRegion("-bottom"),
+            new DrawLiquidTile(Liquids.water),
+            new DrawLiquidTile(Liquids.cryofluid) {
+              {
+                drawLiquidLight = true;
+              }
+            },
+            new DrawDefault());
+        liquidCapacity = 120f;
+        craftTime = 120;
+        lightLiquid = Liquids.cryofluid;
+        consumePower(2f);
+        consumeItem(Items.titanium, 3);
+        consumeLiquid(Liquids.water, 1f);
+      }
+    };
   }
 }
+
+/**
+ * /\
+ * （ﾟ､ 。７
+ * l、 ~ \
+ * じしf_, )ノ
+ */
